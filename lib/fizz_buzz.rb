@@ -1,7 +1,6 @@
-def console
-  raise "argument is nil" if ARGV[0].nil?
-  max = ARGV[0].to_i
-  puts map_upto max
+def console(args)
+  raise "argument is nil" if arg.nil?
+  puts map_upto arg.to_i
 end
 
 def map_upto(max)
@@ -19,5 +18,5 @@ def fizzbuzz(n)
 end
 
 if __FILE__ == $0
-  console
+  console ARGV[0]
 end
