@@ -1,6 +1,6 @@
 def console(args)
-  raise "argument is nil" if arg.nil?
-  puts map_upto arg.to_i
+  raise "argument is nil" if args.nil?
+  puts map_upto args.to_i
 end
 
 def map_upto(max)
